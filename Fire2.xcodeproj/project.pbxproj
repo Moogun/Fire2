@@ -17,6 +17,7 @@
 		82C3E6CF1FF8E4A900C08AD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C3E6CD1FF8E4A900C08AD6 /* LaunchScreen.storyboard */; };
 		82C3E6DA1FF8E4A900C08AD6 /* Fire2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3E6D91FF8E4A900C08AD6 /* Fire2Tests.swift */; };
 		82C3E6E51FF8E4A900C08AD6 /* Fire2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C3E6E41FF8E4A900C08AD6 /* Fire2UITests.swift */; };
+		82C3E6F31FF8F1C100C08AD6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82C3E6F21FF8F1C000C08AD6 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		82C3E6E01FF8E4A900C08AD6 /* Fire2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Fire2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82C3E6E41FF8E4A900C08AD6 /* Fire2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fire2UITests.swift; sourceTree = "<group>"; };
 		82C3E6E61FF8E4A900C08AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C3E6F21FF8F1C000C08AD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A6127C3AA41072D64358F367 /* Pods-Fire2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fire2/Pods-Fire2.debug.xcconfig"; sourceTree = "<group>"; };
 		BD433C3E91B6607078DAE6F4 /* Pods-Fire2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fire2/Pods-Fire2.release.xcconfig"; sourceTree = "<group>"; };
 		E842BC78771116BA0419206F /* Pods_Fire2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fire2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 				82C3E6CB1FF8E4A900C08AD6 /* Assets.xcassets */,
 				82C3E6CD1FF8E4A900C08AD6 /* LaunchScreen.storyboard */,
 				82C3E6D01FF8E4A900C08AD6 /* Info.plist */,
+				82C3E6F21FF8F1C000C08AD6 /* GoogleService-Info.plist */,
 			);
 			path = Fire2;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82C3E6CF1FF8E4A900C08AD6 /* LaunchScreen.storyboard in Resources */,
+				82C3E6F31FF8F1C100C08AD6 /* GoogleService-Info.plist in Resources */,
 				82C3E6CC1FF8E4A900C08AD6 /* Assets.xcassets in Resources */,
 				82C3E6CA1FF8E4A900C08AD6 /* Main.storyboard in Resources */,
 			);
