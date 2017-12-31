@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .red
+        
     }
 
     override func didReceiveMemoryWarning() {
