@@ -8,9 +8,10 @@
 
 import UIKit
 import Firebase
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
@@ -21,9 +22,49 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.rootViewController = ViewController()
         
+        attempRegisterForNotification(application: application)
+        
         FirebaseApp.configure()
         
         return true
+    }
+    
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
+        print("regi token fcm token", fcmToken)
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        print("register for remote notification:", deviceToken)
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler(.alert)
+        print("will receive notification while it is running")
+    }
+    
+    private func attempRegisterForNotification(application: UIApplication) {
+        
+        Messaging.messaging().delegate = self
+        
+        UNUserNotificationCenter.current().delegate = self
+        //user notification auth
+        // all of this works for ios 10+
+        
+        let options: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: options) { (granted, err) in
+            if let err = err {
+                print("Failed to request auth", err)
+                return
+            }
+            
+            if granted {
+                print("Auth granted")
+            } else {
+                print("Auth denied")
+            }
+        }
+        
+        application.registerForRemoteNotifications()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

@@ -57,6 +57,7 @@
 		82C3E6E41FF8E4A900C08AD6 /* Fire2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fire2UITests.swift; sourceTree = "<group>"; };
 		82C3E6E61FF8E4A900C08AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82C3E6F21FF8F1C000C08AD6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		82C3E6F41FF9027500C08AD6 /* Fire2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Fire2.entitlements; sourceTree = "<group>"; };
 		A6127C3AA41072D64358F367 /* Pods-Fire2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fire2/Pods-Fire2.debug.xcconfig"; sourceTree = "<group>"; };
 		BD433C3E91B6607078DAE6F4 /* Pods-Fire2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fire2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fire2/Pods-Fire2.release.xcconfig"; sourceTree = "<group>"; };
 		E842BC78771116BA0419206F /* Pods_Fire2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fire2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +140,7 @@
 		82C3E6C31FF8E4A900C08AD6 /* Fire2 */ = {
 			isa = PBXGroup;
 			children = (
+				82C3E6F41FF9027500C08AD6 /* Fire2.entitlements */,
 				82C3E6C41FF8E4A900C08AD6 /* AppDelegate.swift */,
 				82C3E6C61FF8E4A900C08AD6 /* ViewController.swift */,
 				82C3E6C81FF8E4A900C08AD6 /* Main.storyboard */,
@@ -246,6 +248,11 @@
 					82C3E6C01FF8E4A900C08AD6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					82C3E6D41FF8E4A900C08AD6 = {
 						CreatedOnToolsVersion = 9.2;
@@ -638,6 +645,7 @@
 			baseConfigurationReference = A6127C3AA41072D64358F367 /* Pods-Fire2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fire2/Fire2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NTSX5GAMV7;
 				INFOPLIST_FILE = Fire2/Info.plist;
@@ -655,6 +663,7 @@
 			baseConfigurationReference = BD433C3E91B6607078DAE6F4 /* Pods-Fire2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Fire2/Fire2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NTSX5GAMV7;
 				INFOPLIST_FILE = Fire2/Info.plist;
